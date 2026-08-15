@@ -1,0 +1,49 @@
+# =========================
+# Java / Spring Boot
+# =========================
+backend/target/
+*.class
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# =========================
+# React / Vite
+# =========================
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# =========================
+# Python
+# =========================
+chatbot/__pycache__/
+chatbot/*.pyc
+chatbot/venv/
+chatbot/.venv/
+
+# =========================
+# .NET
+# =========================
+logging-service/bin/
+logging-service/obj/
+
+# =========================
+# General
+# =========================
+*.log
+.DS_Store
+
+# Environment / secrets
+.env
+*.env
