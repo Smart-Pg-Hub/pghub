@@ -144,4 +144,8 @@ Runs on http://localhost:3000
 🔒 Security & Authorization
 All API requests to protected endpoints require an Authorization header containing a valid Bearer JWT:
 
+<<<<<<< HEAD
 Authorization: Bearer <your_jwt_token>
+=======
+Authorization: Bearer <your_jwt_token>
+>>>>>>> 75472a17d63d000e29f1626162ba28509521a9e8
