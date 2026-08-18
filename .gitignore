@@ -1,49 +1,231 @@
-# =========================
-# Java / Spring Boot
-# =========================
-backend/target/
+# =========================================================
+# Smart PG / PGHub - .gitignore
+# =========================================================
+
+
+# =========================================================
+# JAVA / SPRING BOOT
+# =========================================================
+
+# Maven
+**/target/
+
+# Compiled Java files
 *.class
 
-# Eclipse / STS
+# Gradle
+.gradle/
+**/build/
+
+# Spring Boot generated files
+*.jar
+*.war
+
+
+# =========================================================
+# ECLIPSE / STS
+# =========================================================
+
 .classpath
 .project
 .settings/
 
-# IntelliJ
+# Eclipse metadata
+.factorypath
+.springBeans
+
+
+# =========================================================
+# INTELLIJ IDEA
+# =========================================================
+
 .idea/
 *.iml
+*.iws
+*.ipr
 
-# =========================
-# React / Vite
-# =========================
-frontend/node_modules/
-frontend/dist/
+
+# =========================================================
+# VS CODE
+# =========================================================
+
+.vscode/
+
+# Keep VS Code extensions/recommendations if needed
+# !.vscode/extensions.json
+
+
+# =========================================================
+# REACT / VITE / NODE
+# =========================================================
+
+# Node dependencies
+**/node_modules/
+
+# Vite / React build output
+**/dist/
+
+# Other frontend build directories
+**/.vite/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# =========================================================
+# ENVIRONMENT FILES / SECRETS
+# =========================================================
 
 # Environment files
-frontend/.env
-frontend/.env.*
-!frontend/.env.example
-
-# =========================
-# Python
-# =========================
-chatbot/__pycache__/
-chatbot/*.pyc
-chatbot/venv/
-chatbot/.venv/
-
-# =========================
-# .NET
-# =========================
-logging-service/bin/
-logging-service/obj/
-
-# =========================
-# General
-# =========================
-*.log
-.DS_Store
-
-# Environment / secrets
 .env
 *.env
+
+# Environment files inside subdirectories
+**/.env
+**/*.env
+
+# Allow example environment files
+!.env.example
+!**/.env.example
+
+
+# =========================================================
+# PYTHON
+# =========================================================
+
+# Virtual environments
+**/.venv/
+**/venv/
+**/env/
+**/ENV/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Python compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Python distribution
+**/build/
+**/dist/
+**/*.egg-info/
+
+# Python test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# =========================================================
+# .NET / ASP.NET
+# =========================================================
+
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+
+
+# =========================================================
+# DATABASE / LOCAL FILES
+# =========================================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Local database files
+*.sqlitedb
+
+
+# =========================================================
+# LOGS
+# =========================================================
+
+*.log
+logs/
+**/logs/
+
+
+# =========================================================
+# OS FILES
+# =========================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+
+# =========================================================
+# IDE / EDITOR TEMP FILES
+# =========================================================
+
+*.swp
+*.swo
+*.tmp
+*.bak
+*.temp
+
+
+# =========================================================
+# JAVA / SPRING LOCAL CONFIG
+# =========================================================
+
+# Local application configuration
+application-local.properties
+application-local.yml
+application-local.yaml
+
+# Local Spring configuration
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+
+
+# =========================================================
+# CHATBOT / AI LOCAL FILES
+# =========================================================
+
+# Python chatbot virtual environment
+Backend/chatbot/.venv/
+
+# Python cache
+Backend/chatbot/__pycache__/
+
+# AI model/cache files
+**/.cache/
+**/models/
