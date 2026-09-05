@@ -20,7 +20,7 @@ app = FastAPI(
 )
 
 # Allow your Spring Boot backend (and anything else) to call this service.
-# In production, replace "*" with your actual backend's origin.
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
