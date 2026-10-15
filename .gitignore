@@ -7,6 +7,25 @@
 # JAVA / SPRING BOOT
 # =========================================================
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Spring local configuration
+application-local.properties
+application-prod.properties
+
+# Java build
+target/
+
+# Node
+node_modules/
+
+# Python
+.venv/
+__pycache__/
+
 # Maven
 **/target/
 
