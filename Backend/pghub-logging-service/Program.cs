@@ -44,9 +44,8 @@ app.MapGet("/", () =>
             "GET /api/logs"
         }
     }));
-
-app.Run("http://localhost:5101");
-
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Run($"http://0.0.0.0:{port}");
 public class LogEntry
 {
     public string Id { get; set; } = "";
